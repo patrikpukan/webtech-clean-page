@@ -7,7 +7,11 @@ body{
   font-size: 24px;
   font-family: Helvetica;
   color: #ffffff; /* Text color */
+}
 
+.contents {
+  margin-left: 25em;
+  margin-right: 25em;
 }
 
 h1 {
@@ -29,6 +33,19 @@ p {
   align-items: center;
 }
 
+.single-image {
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  
+}
+
+.responsive-image {
+  width: 40rem;
+
+  object-fit: contain;
+  border: 3px solid white; /* Adjust as needed */
+}
 .sidebar {
   position: fixed;
   right: 0;
@@ -74,6 +91,7 @@ a:hover {
 .a-inline{
   display: inline;
   font-weight: bold;
+  color: aquamarine;
 }
 
   .fixed-footer {
@@ -85,4 +103,9 @@ a:hover {
     align-items: center;
     flex-wrap: nowrap; /* This will prevent the items from wrapping onto multiple lines */
   }
-}
+
+  .cta-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px; /* Adjust as needed */
+  }
