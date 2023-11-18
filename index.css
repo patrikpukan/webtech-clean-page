@@ -10,6 +10,19 @@ body{
 
 }
 
+h1 {
+  text-align: center;
+  margin-top: 10px;
+}
+
+h2{
+  text-align: center;
+}
+
+p {
+  text-align: center;
+}
+
 .separator1{
   display: flex;
   justify-content: center;
@@ -22,8 +35,13 @@ body{
   top: 0;
   height: 100%;
   width: 250px;
-  background-color: #333;
+  background-color: rgba(0,0,0,0.5);
   transition: width 0.3s;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; /* This will align the items vertically */
 }
 
 .sidebar:hover {
@@ -35,6 +53,7 @@ ul {
   padding: 0;
   margin: 0;
 }
+
 
 li {
   padding: 10px;
@@ -49,4 +68,21 @@ a {
 
 a:hover {
   background-color: #555;
+  border-radius: 10px;
+}
+
+.a-inline{
+  display: inline;
+  font-weight: bold;
+}
+
+  .fixed-footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap; /* This will prevent the items from wrapping onto multiple lines */
+  }
 }
