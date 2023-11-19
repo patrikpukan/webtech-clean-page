@@ -10,8 +10,9 @@ body{
 }
 
 .contents {
-  margin-left: 25em;
-  margin-right: 25em;
+  margin-top: 5em;
+  margin-left: 10em;
+  margin-right: 10em;
 }
 
 h1 {
@@ -61,8 +62,19 @@ p {
   flex-direction: column; 
 }
 
-.sidebar:hover {
-  width: 300px;
+.sidebar2 ul {
+  position: fixed;
+  top: 0;
+  height: 60px; /* Adjust as needed */
+  width: 100%;
+  background-color: rgba(0,0,0,0.5);
+  transition: height 0.3s;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row; 
+  list-style-type: none;
 }
 
 ul {
