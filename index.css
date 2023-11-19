@@ -3,10 +3,10 @@ body{
   background: linear-gradient(135deg, #A6196A, #59C7C9);
   margin: 0;
   padding: 0;
-  height: 100vh; /* Make sure the background covers the entire viewport */
+  height: 100vh; 
   font-size: 24px;
   font-family: Helvetica;
-  color: #ffffff; /* Text color */
+  color: #ffffff; 
 }
 
 .contents {
@@ -44,7 +44,7 @@ p {
   width: 40rem;
 
   object-fit: contain;
-  border: 3px solid white; /* Adjust as needed */
+  border: 3px solid white; 
 }
 .sidebar {
   position: fixed;
@@ -58,7 +58,7 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column; /* This will align the items vertically */
+  flex-direction: column; 
 }
 
 .sidebar:hover {
@@ -101,11 +101,11 @@ a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-wrap: nowrap; /* This will prevent the items from wrapping onto multiple lines */
+    flex-wrap: nowrap; 
   }
 
   .cta-content {
     display: flex;
     justify-content: space-between;
-    gap: 50px; /* Adjust as needed */
+    gap: 50px; 
   }
