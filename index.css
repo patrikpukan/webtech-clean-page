@@ -9,6 +9,19 @@ body{
   color: #ffffff; 
 }
 
+
+.home-page .sidebar2 a[href="index.html"],
+.spring-page .sidebar2 a[href="spring.html"],
+.msi-page .sidebar2 a[href="msi.html"],
+.summer-page .sidebar2 a[href="summer.html"],
+.worlds-page .sidebar2 a[href="worlds.html"],
+.offseason-page .sidebar2 a[href="offseason.html"] {
+    color:#c73587;
+    background-color: #5e5a5a;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
 .contents {
   margin-top: 5em;
   margin-left: 10em;
@@ -122,3 +135,135 @@ a:hover {
     justify-content: space-between;
     gap: 50px; 
   }
+
+@media print{ 
+  body{
+    margin: 0;
+    padding: 0;
+    height: 100vh; 
+    font-size: 24px;
+    font-family: Helvetica;
+  }
+  
+  
+  .home-page .sidebar2 a[href="index.html"],
+  .spring-page .sidebar2 a[href="spring.html"],
+  .msi-page .sidebar2 a[href="msi.html"],
+  .summer-page .sidebar2 a[href="summer.html"],
+  .worlds-page .sidebar2 a[href="worlds.html"],
+  .offseason-page .sidebar2 a[href="offseason.html"] {
+      color:#c73587;
+      background-color: #5e5a5a;
+      font-weight: bold;
+      border-radius: 5px;
+  }
+  
+  .contents {
+    margin-top: 5em;
+    margin-left: 10em;
+    margin-right: 10em;
+    padding-bottom: 1em;
+  }
+  
+  h1 {
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  h2{
+    text-align: center;
+  }
+  
+  p {
+    text-align: center;
+  }
+  
+  .separator1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .single-image {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    
+  }
+  
+  .responsive-image {
+    width: 40rem;
+  
+    object-fit: contain;
+    border: 3px solid white; 
+  }
+  .sidebar {
+    position: fixed;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 250px;
+    background-color: rgba(0,0,0,0.5);
+    transition: width 0.3s;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+  }
+  
+  .sidebar2 ul {
+    position: fixed;
+    top: 0;
+    height: 60px; /* Adjust as needed */
+    width: 100%;
+    background-color: rgba(0,0,0,0.5);
+    transition: height 0.3s;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row; 
+    list-style-type: none;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  
+  li {
+    padding: 10px;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    transition: background-color 0.3s;
+  }
+  
+  a:hover {
+    background-color: #555;
+    border-radius: 10px;
+  }
+  
+  .a-inline{
+    display: inline;
+    font-weight: bold;
+    color: aquamarine;
+  }
+  
+    .fixed-footer {
+      display: none;
+    }
+  
+    .cta-content {
+      display: flex;
+      justify-content: space-between;
+      gap: 50px; 
+    }
+
+}
